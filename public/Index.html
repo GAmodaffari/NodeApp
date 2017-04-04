@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Nodejs</title>
+
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="bower_components/material-icons/css/material-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/NodeJSCss.css">
+
+
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-aria/angular-aria.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-messages/angular-messages.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-material/angular-material.min.js"></script>
+    <!----------------------------------------------------------------------------------------------------------------->
+        <script type="text/javascript" src="app/app.js"></script>
+        <script type="text/javascript" src="app/app.route.js"></script>
+    <!----------------------------------------------------------------------------------------------------------------->
+        <script type="text/javascript" src="app/controllers/homeController.js"></script>
+        <script type="text/javascript" src="app/controllers/detailsController.js"></script>
+        <script type="text/javascript" src="app/controllers/editController.js"></script>
+        <script type="text/javascript" src="app/controllers/insertController.js"></script>
+        <script type="text/javascript" src="app/controllers/toolbarController.js"></script>
+
+    <script type="text/javascript" src="app/directives/loading.directive.js"></script>
+    <script type="text/javascript" src="app/directives/toolbar.directive.js"></script>
+   </head>
+
+   <body>
+   <div layout="column" layout-fill>
+       <app-toolbar></app-toolbar>
+       <md-content layout="row" flex>
+           <div ng-view></div>
+       </md-content>
+   </div>
+
+   </body>
+   </html>

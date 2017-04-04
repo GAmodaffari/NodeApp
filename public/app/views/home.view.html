@@ -1,0 +1,49 @@
+<app-loading ng-if="loading"></app-loading>
+<div ng-if="!loading">
+<!--
+<md-content class="md-padding">
+  <div layout="row" layout-wrap>
+    <md-card md-theme-watch flex="40" ng-repeat="utente in nomeUtenti">
+
+              <md-card-title-text>
+                <md-button class="md-primary" ng-href="#/detail/{{utente.id}}" >{{utente.NomeUtente}}</md-button>
+              </md-card-title-text>
+
+              <md-card-actions layout="row" layout-align="end center">
+                 <md-button class="md-raised" ng-click="delete(utente.id,$index)">delete</md-button>
+                 <md-button class="md-raised" ng-href="#/edit/{{utente.id}} "> Edit User</md-button>
+              </md-card-actions>
+    </md-card>
+  </div>
+
+    <md-button class="md-raised" ng-href="#/insert"> Inserisci nuovo Utente</md-button>
+
+</md-content> <!-- carte colorate a random --
+
+-->
+
+<md-content >
+    <md-list layout="row" layout-wrap layout-align="center">
+        <md-list-item ng-repeat="utente in nomeUtenti"  class="md-3-line" flex="35">
+            <div class="md-list-item-text ">
+            <md-icon md-font-set="material-icons " class="mi-48" >account_circle</md-icon>
+                <md-button class="md-primary" ng-href="#/detail/{{utente.id}}" >{{utente.NomeUtente}}</md-button>
+            </div>
+            <!-- <md-card-actions layout="row" layout-align="end center"> -->
+            <div class="column">
+            <md-button class="md-secondary " ng-click="delete(utente.id,$index,$event)">delete</md-button>
+            <md-button class="md-secondary " ng-href="#/edit/{{utente.id}} "> Edit User</md-button>
+            <!--</md-card-actions> -->
+            <md-divider></md-divider>
+            </div>
+            <!-- <md-button class="md-primary" ng-href="{{googleUrl}}" target="_blank">Primary Link</md-button>-->
+        </md-list-item>
+    </md-list>
+
+    <div layout="row" layout-align="center " >
+        <md-button class="md-raised" ng-href="#/insert"> Inserisci nuovo Utente</md-button>
+    </div>
+</md-content>
+</div>
+due strisce in background con riquadro centrale in primo piano , immagini utente,
+una toolbar con pulsati per navigare all'interno dell'applicazione

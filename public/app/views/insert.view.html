@@ -1,0 +1,35 @@
+<md-content flex="50" flex-gt-md="25" layout-padding>
+    <form ng-submit="submit()">
+
+        <div class="row">
+            <md-input-container class="md-block">
+                <label>Nome</label>
+                <input  type="text" ng-model="insertUsers.Nome">
+                <div ng-message="required"> This is required.</div>
+            </md-input-container>
+            <md-input-container class="md-block">
+                <label>Cognome</label>
+                <input type="text" ng-model="insertUsers.Cognome">
+                <div ng-message="required"> This is required.</div>
+            </md-input-container>
+            <md-input-container class="md-block">
+                <label>Nome Utente</label>
+                <input type="text" ng-model="insertUsers.NomeUtente">
+                <div ng-message="required"> This is required.</div>
+            </md-input-container>
+            <md-input-container class="md-block">
+                <label>Email</label>
+               <input type="text" ng-model="insertUsers.email">
+                <div ng-message="required"> This is required.</div>
+            </md-input-container>
+            <md-input-container class="md-block">
+                <label>Password</label>
+              <input type="text" ng-model="insertUsers.Password">
+                <div ng-message="required"> This is required.</div>
+            </md-input-container>
+        </div>
+
+        <md-button class="md-raised" type="submit">Submit </md-button>
+    </form >
+
+</md-content>

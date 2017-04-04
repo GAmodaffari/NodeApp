@@ -1,0 +1,15 @@
+# ignore /.idea/ WebStorm folder
+.idea/
+
+# ignore /bower_components/ folder
+bower_components/
+
+# ignore /bower_components/ folder
+node_modules/
+
+# ignore /dist/ folder
+dist/
+
+# ignore thumbnails created by windows
+Thumbs.db
+
