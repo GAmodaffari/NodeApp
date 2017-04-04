@@ -1,10 +1,10 @@
-<md-content layout-padding>
+<md-content layout-padding layout-align="center">
 
     <div layout-gt-sm="row" layout-align="center" >
         <div class="column" layout-align="center">
             <md-icon style="height: 50px">account_circle</md-icon>
         </div>
-            <div class="layout-column">
+            <div class="layout-column" layout-align="center">
 
                  <div>Nome:{{editUsers.Nome}}</div>
                  <div> Cognome:{{editUsers.Cognome}}</div>
@@ -22,7 +22,7 @@
                 <label>Nome</label>
                 <input type="text" ng-model="editUsers.Nome">
             </md-input-container >
-            <md-input-container class="md-block"  flex-gt-sm flex="25">
+            <md-input-container class="md-block"  flex-gt-sm flex="25" flex-offset="10">
                 <label>Cognome</label>
                 <input type="text" ng-model="editUsers.Cognome">
             </md-input-container>
@@ -32,7 +32,7 @@
                 <label>Email</label>
                 <input type="text" ng-model="editUsers.email">
             </md-input-container>
-            <md-input-container class="md-block"  flex-gt-xs flex="25">
+            <md-input-container class="md-block"  flex-gt-xs flex="25" flex-offset="10">
                 <label>Password</label>
                 <input type="text" ng-model="editUsers.Password">
             </md-input-container>
