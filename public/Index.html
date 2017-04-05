@@ -19,6 +19,7 @@
     <!----------------------------------------------------------------------------------------------------------------->
         <script type="text/javascript" src="app/app.js"></script>
         <script type="text/javascript" src="app/app.route.js"></script>
+        <script type="text/javascript" src="app/app.config.js"></script>
     <!----------------------------------------------------------------------------------------------------------------->
         <script type="text/javascript" src="app/controllers/homeController.js"></script>
         <script type="text/javascript" src="app/controllers/detailsController.js"></script>
@@ -32,9 +33,15 @@
 
    <body>
 
+       <app-toolbar md-theme="barTheme" ></app-toolbar>
+       <div layout="row" layout-padding layout-wrap style="padding-bottom: 90px;" ng-cloak flex-offset="15">
+       <md-whiteframe class="md-whiteframe-23dp" flex-gt-md="85"  layout-align="center">
+           <app-toolbar></app-toolbar>
+         <div ng-view></div>
+       </md-whiteframe>
+       </div>
        <app-toolbar></app-toolbar>
-           <div ng-view></div>
-       </md-content>
+
 
    </body>
    </html>

@@ -4,7 +4,8 @@
 
 var app = angular.module('app',['ngRoute','ngMaterial'])
 
-.run(function(){
+    .run(function(){
 
-    console.log('my App is redy!');
+        console.log('my App is redy!')
+
 });

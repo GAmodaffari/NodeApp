@@ -1,19 +1,19 @@
-<md-content layout-padding layout-align="center">
+<md-content layout-padding >
 
     <div layout-gt-sm="row" layout-align="center" >
-        <div class="column" layout-align="center">
-            <md-icon style="height: 50px">account_circle</md-icon>
+        <div class="column">
+            <md-icon style="width: 300px; height: 300px; font-size: 300px">account_circle</md-icon>
         </div>
-            <div class="layout-column" layout-align="center">
+            <div class="layout-column"layout-align="center">
 
-                 <div>Nome:{{editUsers.Nome}}</div>
-                 <div> Cognome:{{editUsers.Cognome}}</div>
-                 <div> Email:{{editUsers.email}}</div>
-                 <div>Password:{{editUsers.Password}}</div>
+                 <div flex="15">Nome: {{editUsers.Nome}}</div>
+                 <div flex="15"> Cognome: {{editUsers.Cognome}}</div>
+                 <div flex="15"> Indirizzo email: {{editUsers.email}}</div>
+                 <div flex="15">Password: {{editUsers.Password}}</div>
             </div>
     </div>
 
-                <md-divider></md-divider>
+    <md-divider ></md-divider>
 
     <form ng-submit="submit()" >
 

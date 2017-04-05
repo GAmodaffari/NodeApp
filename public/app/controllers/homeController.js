@@ -39,10 +39,4 @@ app.controller('homeController',['$scope','$http','$mdDialog',function ($scope,$
                 });
         };
 
-
-    /*$scope.people = [
-        { name: 'Janet Perkins', img: 'img/100-0.jpeg', newMessage: true }
-    ];*/
-
-
 }]);

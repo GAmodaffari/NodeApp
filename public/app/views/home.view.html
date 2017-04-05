@@ -22,15 +22,16 @@
 
 -->
 
-<md-content >
+<md-content>
     <md-list layout="row" layout-wrap layout-align="center">
         <md-list-item ng-repeat="utente in nomeUtenti"  class="md-3-line" flex="35">
             <div class="md-list-item-text ">
-            <md-icon md-font-set="material-icons " class="mi-48" >account_circle</md-icon>
-                <md-button class="md-primary" ng-href="#/detail/{{utente.id}}" >{{utente.NomeUtente}}</md-button>
-            </div>
+            <md-icon md-font-set="material-icons " style="width: 40px; height: 40px; font-size:40px" >account_circle</md-icon>
+            </div >
+
             <!-- <md-card-actions layout="row" layout-align="end center"> -->
-            <div class="column">
+            <div class="layout-column" flex="5">
+            <md-button class="md-primary" ng-href="#/detail/{{utente.id}}" >{{utente.NomeUtente}}</md-button>
             <md-button class="md-secondary " ng-click="delete(utente.id,$index,$event)">delete</md-button>
             <md-button class="md-secondary " ng-href="#/edit/{{utente.id}} "> Edit User</md-button>
             <!--</md-card-actions> -->
@@ -38,6 +39,8 @@
             </div>
             <!-- <md-button class="md-primary" ng-href="{{googleUrl}}" target="_blank">Primary Link</md-button>-->
         </md-list-item>
+        <md-divider ></md-divider>
+
     </md-list>
 
     <div layout="row" layout-align="center " >
@@ -46,5 +49,5 @@
 </md-content>
 </div>
 
-due strisce in background con riquadro centrale in primo piano , immagini utente,
+due strisce in background, immagini utente,
 una toolbar con pulsati per navigare all'interno dell'applicazione
