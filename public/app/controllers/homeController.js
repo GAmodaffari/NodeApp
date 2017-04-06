@@ -17,7 +17,7 @@ app.controller('homeController',['$scope','$http','$mdDialog',function ($scope,$
         });
 
 
-        $scope.delete = function(id, index,ev){
+        $scope.delete = function(id, index){
 
             var confirm = $mdDialog.confirm()
                 .title('Would you like to delete this user?')
@@ -31,12 +31,12 @@ app.controller('homeController',['$scope','$http','$mdDialog',function ($scope,$
                     cache: true,
                     method: 'DELETE',
                     url: 'http://localhost:1339/api/users/'+ id
-                }).then(function (response) {
+                    }).then(function (response) {
 
-                    $scope.nomeUtenti.splice(index, 1);
-                });
+                         $scope.nomeUtenti.splice(index, 1);
+                    });
 
-                });
+            });
         };
 
 }]);

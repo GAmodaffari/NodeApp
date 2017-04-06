@@ -3,7 +3,7 @@
  */
 
 app.config(['$mdThemingProvider', function($mdThemingProvider) {
-    
+
     $mdThemingProvider.theme('barTheme')
         .primaryPalette('purple')
         .accentPalette('green');

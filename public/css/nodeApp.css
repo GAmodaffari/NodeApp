@@ -1,0 +1,15 @@
+.card-media {
+
+    background-color: #999999;
+}
+ .my-whiteframe{
+
+     width: 960px;
+     height: 510px;
+     overflow: auto;
+ }
+.link{
+
+    color: grey;
+    text-decoration:none;
+}
