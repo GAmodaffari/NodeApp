@@ -7,21 +7,24 @@
         <md-card-title>
             <md-card-title-text layout-align="center ">
                 <span class="md-headline">{{utente.NomeUtente}}</span>
-                <a class="md-subhead button link" ng-href="#/detail/{{utente.id}}" >Informazioni</a>
+                <a class="md-subhead button my-link" ng-href="#/detail/{{utente.id}}" >Info</a>
             </md-card-title-text>
             <md-card-title-media>
-                <div class="md-media-md card-media">
+                <div>
                     <md-icon md-font-set="material-icons " style="width: 110px; height: 110px; font-size:110px">account_circle</md-icon>
                 </div>
             </md-card-title-media>
         </md-card-title>
-        <md-card-actions layout="row" layout-align="end center">
+        <md-card-actions layout="row" layout-align="end center" class="my-transbox-text">
             <md-button class="md-raised" ng-click="delete(utente.id,$index)">delete</md-button>
             <md-button class="md-raised" ng-href="#/edit/{{utente.id}} "> Edit User</md-button>
         </md-card-actions>
     </md-card>
-      <md-button class="md-raised" ng-href="#/insert"> Inserisci nuovo Utente</md-button>
+
   </div>
+    <div layout="row" layout-align="center">
+        <md-button class="md-raised" ng-href="#/insert"> Inserisci nuovo Utente</md-button>
+    </div>
 
 </md-content>
     <!--
@@ -44,6 +47,3 @@
             <md-button class="md-raised" ng-href="#/insert"> Inserisci nuovo Utente</md-button>
         </div>    -->
     </div>
-
-    due strisce in background, immagini utente,
-    una toolbar con pulsati per navigare all'interno dell'applicazione

@@ -1,0 +1,33 @@
+<md-sidenav md-is-locked-open="$mdMedia('gt-sm')" layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
+    <md-toolbar class="md-menu-toolbar">
+        <div class="md-toolbar-tools">
+
+            <h2>
+                <span>reMind</span>
+            </h2>
+            <span flex></span>
+            <md-button hide-gt-sm class="md-icon-button" aria-label="Close" ng-click="toggleLeft()">
+                <md-icon class="material-icons">keyboard_arrow_left</md-icon>
+            </md-button>
+        </div>
+    </md-toolbar>
+    <md-list>
+        <!--<div ng-repeat="root_item in side_menu">
+            <md-divider ng-if="$index != 0"></md-divider>
+            <div ng-if="root_item.label.length > 0">
+                <md-subheader>{{root_item.label}}</md-subheader>
+            </div>
+           <!-- <md-list-item md-ink-ripple ng-repeat="item in root_item.childs" ng-class="isActive(item.link)">
+                <a href="{{item.link}}" ng-click="toggleLeft()">
+                    <md-item-content layout="row" layout-align="start center">
+                        <div class="inset">
+                            <md-icon class="material-icons">{{item.icon}}</md-icon>
+                        </div>
+                        <div class="inset" translate>{{item.title}}
+                        </div>
+                    </md-item-content>
+                </a>
+            </md-list-item>
+        </div>-->
+    </md-list>
+</md-sidenav>

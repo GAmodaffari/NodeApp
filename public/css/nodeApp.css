@@ -1,15 +1,70 @@
-.card-media {
 
-    background-color: #999999;
-}
- .my-whiteframe{
+ .my-whiteframe
+ {
+     width: 1400px;
+     height: 650px;
+    /* border-radius: 25px;*/
+     position: absolute;
+     top: 5%;
 
-     width: 960px;
-     height: 510px;
-     overflow: auto;
+
+
  }
-.link{
-
+.my-link
+{
     color: grey;
     text-decoration:none;
 }
+.my-toolbar{
+    height: 100px;
+    width: 100%;
+    /*border-top-right-radius: 25px;
+    border-top-left-radius: 25px;*/
+}
+
+ .my-transbox
+ {
+     background-color: #ffffff;
+     opacity: 0.6;
+     filter: alpha(opacity=60); /* For IE8 and earlier */
+ }
+ .my-transbox-text
+ {
+     margin: 5%;
+     font-weight: bold;
+     color: #000000;
+ }
+ .my-scroll{
+
+     height: 90.1%;
+     overflow-y: auto;
+ }
+ #my-style::-webkit-scrollbar-track
+ {
+     /*-webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.3);*/
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+    /* background-color: transparent;*/
+ }
+ #my-style::-webkit-scrollbar-track-piece
+ {
+     background-color: transparent;
+ }
+
+ #my-style::-webkit-scrollbar
+ {
+     width: 5px;
+    /* background-color: transparent;*/
+    /* background-color: powderblue;*/
+ }
+
+ #my-style::-webkit-scrollbar-thumb
+ {
+     width: auto;
+     background-color: lightgray;
+ }
+ .my-div
+ {
+     height: 101px;
+     width: 100%;
+     background-color: rgba(0, 230, 0, 0.5);
+ }

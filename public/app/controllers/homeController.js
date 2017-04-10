@@ -17,7 +17,7 @@ app.controller('homeController',['$scope','$http','$mdDialog',function ($scope,$
         });
 
 
-        $scope.delete = function(id, index){
+        $scope.delete = function(id, index,ev){
 
             var confirm = $mdDialog.confirm()
                 .title('Would you like to delete this user?')
