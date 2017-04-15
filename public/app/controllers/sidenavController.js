@@ -1,19 +1,22 @@
-app.controller('sidenavController', ['$scope', '$location', '$mdSidenav', '$mdUtil', function ($scope, $location, $mdSidenav, $mdUtil){
+/**
+ * Created by Alessandro on 12/04/2017.
+ */
 
 
-    $scope.isActive = function(link) {
-        var currentRoute = $location.path();
-        return link.substring(1) === currentRoute ? 'active' : '';
-    };
+app.controller('sidenavController',['$scope','$http','$routeParams',function ($scope, $http,$routeParams) {
 
-    $scope.toggleLeft = buildToggler('left');
-    /**
-     * Build handler to open/close a SideNav; when animation finishes
-     * report completion in console
-     */
-    function buildToggler(navID) {
-        return   $mdUtil.debounce(function(){
-            $mdSidenav(navID).toggle()
-        },200);
-    }
+    $http({
+        cache: true,
+        method: 'GET',
+        url: 'http://localhost:1339/api/users/'
+    }).then(function(res) {
+
+        $scope.nomeUtenti = res.data;
+
+    }).finally(function() {
+
+    });
+
+
+
 }]);

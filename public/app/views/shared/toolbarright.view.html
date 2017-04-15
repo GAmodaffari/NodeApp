@@ -1,0 +1,27 @@
+<md-toolbar class="md-hue-1 my-toolbar-right">
+    <div class="md-toolbar-tools">
+        <h2 flex md-truncate class="my-font">Manage Users</h2>
+           <!-- <md-divider class="my-vertical-divider"></md-divider>-->
+                <div>
+                    <md-menu md-position-mode="target-right target" ng-cloak>
+                        <md-button class="md-icon-button" ng-click="$mdMenu.open($event)">
+                            <md-icon>more_vert</md-icon>
+                        </md-button>
+                        <md-menu-content width="4">
+                            <md-menu-item>
+                                <md-button ng-click="delete(utente.id,$index)">
+                                    <md-icon>delete</md-icon>
+                                    Delete User
+                                </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                                <md-button  ng-href="#/edit/{{utente.id}} ">
+                                    <md-icon>edit</md-icon>
+                                    Edit User
+                                </md-button>
+                            </md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+                </div>
+    </div>
+</md-toolbar>

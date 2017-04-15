@@ -38,7 +38,9 @@
 
      height: 90.1%;
      overflow-y: auto;
+
  }
+
  #my-style::-webkit-scrollbar-track
  {
      /*-webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.3);*/
@@ -62,9 +64,43 @@
      width: auto;
      background-color: lightgray;
  }
+
  .my-div
  {
      height: 101px;
      width: 100%;
      background-color: rgba(0, 230, 0, 0.5);
+ }
+ .my-vertical-divider
+ {
+     border-top-width: 1px;
+     border-right-width: 1px;
+     border-right-style: solid;
+     border-right-color: #fafafa;
+     height: 100%;
+ }
+
+.my-toolbar-right
+{
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: lavender;
+    text-align: center;
+}
+ .my-toolbar-left
+ {
+     text-align: center;
+ }
+
+.my-font
+{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+ .my-fab-button
+ {
+     top: auto;
+     right: 20px;
+     bottom: 20px;
+     left: auto;
+     position: fixed !important;
  }

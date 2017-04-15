@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
         <link rel="stylesheet" href="bower_components/material-icons/css/material-icons.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
         <link rel="stylesheet" href="css/nodeApp.css">
 
 
@@ -25,22 +26,32 @@
         <script type="text/javascript" src="app/controllers/detailsController.js"></script>
         <script type="text/javascript" src="app/controllers/editController.js"></script>
         <script type="text/javascript" src="app/controllers/insertController.js"></script>
-        <script type="text/javascript" src="app/controllers/toolbarController.js"></script>
+        <script type="text/javascript" src="app/controllers/toolbarLeftController.js"></script>
+        <script type="text/javascript" src="app/controllers/toolbarRightController.js"></script>
         <script type="text/javascript" src="app/controllers/sidenavController.js"></script>
 
+
         <script type="text/javascript" src="app/directives/loading.directive.js"></script>
-        <script type="text/javascript" src="app/directives/toolbar.directive.js"></script>
+        <script type="text/javascript" src="app/directives/toolbarLeft.directive.js"></script>
         <script type="text/javascript" src="app/directives/sidenav.directive.js"></script>
+        <script type="text/javascript" src="app/directives/toolbarRight.directive.js"></script>
    </head>
 
-   <body>
-   <div md-theme="barTheme" class="my-div"></div>
-       <div layout="row"  layout-wrap layout-align="center">
-       <md-whiteframe class="md-whiteframe-24dp my-whiteframe"  layout-align="center center">
-           <app-toolbar></app-toolbar>
-           <app-sidenav></app-sidenav>
-           <div ng-view></div>
-       </md-whiteframe>
-       </div>
-   </body>
+    <body>
+        <div class="my-div"></div>
+        <div layout="row" layout-align="center">
+            <md-whiteframe class="md-whiteframe-24dp my-whiteframe" layout="row">
+                <div flex="22">
+                    <app-toolbar-left></app-toolbar-left>
+                    <div class="my-scroll" id="my-style">
+                        <app-sidenav></app-sidenav>
+                    </div>
+                </div>
+                <div flex>
+                    <app-toolbar-right></app-toolbar-right>
+                    <div ng-view ></div>
+                </div>
+            </md-whiteframe>
+        </div>
+    </body>
 </html>
