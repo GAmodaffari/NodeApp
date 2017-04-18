@@ -50,6 +50,7 @@
  #my-style::-webkit-scrollbar-track-piece
  {
      background-color: transparent;
+
  }
 
  #my-style::-webkit-scrollbar
@@ -102,5 +103,5 @@
      right: 20px;
      bottom: 20px;
      left: auto;
-     position: fixed !important;
+     position: absolute!important;
  }
