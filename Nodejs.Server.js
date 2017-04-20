@@ -104,6 +104,7 @@ app.delete('/api/users/:id',function (request, response) {
 
         id: dbConfig.escape(id)
     });
+
     dbConfig.query(query,function (err, results, fields) {
         if(!err) {
             console.log(results);

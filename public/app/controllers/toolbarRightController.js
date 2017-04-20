@@ -1,7 +1,7 @@
 /**
  * Created by Alessandro on 11/04/2017.
  */
-app.controller('toolbarRightController',['$scope','$location','$mdDialog','$mdUtil','$http',function ($scope,$location,$mdDialog,$mdUtil,$http) {
+app.controller('toolbarRightController',['$scope','$location','$mdDialog','$mdUtil','$http','datiUtenti',function ($scope,$location,$mdDialog,$mdUtil,$http,datiUtenti) {
 
         var originatorEv;
 
@@ -10,7 +10,10 @@ app.controller('toolbarRightController',['$scope','$location','$mdDialog','$mdUt
         $mdOpenMenu(ev);
     };
 
-    $scope.delete = function(id, index,ev){
+
+    console.log($scope.editId);
+
+    $scope.delete = function(ev){
 
         var confirm = $mdDialog.confirm()
             .title('Would you like to delete this user?')
@@ -20,15 +23,16 @@ app.controller('toolbarRightController',['$scope','$location','$mdDialog','$mdUt
             .cancel('Cancel');
 
         $mdDialog.show(confirm).then(function() {
+            console.log(datiUtenti.pipid);
             $http({
                 cache: true,
                 method: 'DELETE',
-                url: 'http://localhost:1339/api/users/'+ id
+                url: 'http://localhost:1339/api/users/'+ datiUtenti.pipid
             }).then(function (response) {
-
-                $scope.nomeUtenti.splice(index, 1);
+                $scope.nomeUtenti.splice(datiUtenti.pipindex, 1);
             });
             originatorEv = null;
         });
     };
-    }]);
+
+}]);

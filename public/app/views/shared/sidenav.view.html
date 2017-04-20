@@ -1,10 +1,9 @@
 
-    <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
+    <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" layout="column" class="md-sidenav-left ">
         <md-content>
             <md-list layout="column">
-                <md-list-item ng-repeat="utente in nomeUtenti"  class="md-2-line my-font"  ng-href="#/detail/{{utente.id}}">
-                    <div>
-
+                <md-list-item ng-repeat="utente in nomeUtenti track by $index"  class="md-2-line my-font" ng-click="pass($index,utente.id)" >
+                        <div>
                         <md-icon md-font-set="material-icons " style="width: 60px; height: 60px; font-size:60px"  >account_circle</md-icon>
                     </div>
                     <div layout="column">
@@ -13,10 +12,10 @@
                     </div>
                     <md-divider></md-divider>
                 </md-list-item>
+                <md-button class="md-fab md-fab-bottom-right md-fab-bottom-fixed" ng-href="#/insert">
+                    <md-icon>add</md-icon>
+                </md-button>
             </md-list>
-            <md-button class="md-fab  my-fab-button" ng-href="#/insert">
-                <md-icon>add</md-icon>
-            </md-button>
         </md-content>
     </md-sidenav>
 

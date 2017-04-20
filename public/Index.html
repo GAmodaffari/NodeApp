@@ -7,8 +7,8 @@
         <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
         <link rel="stylesheet" href="bower_components/material-icons/css/material-icons.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
         <link rel="stylesheet" href="css/nodeApp.css">
+
 
 
         <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
@@ -22,6 +22,8 @@
         <script type="text/javascript" src="app/app.route.js"></script>
         <script type="text/javascript" src="app/app.config.js"></script>
     <!----------------------------------------------------------------------------------------------------------------->
+        <script type="text/javascript" src="app/services/datiUtenti.js"></script>
+
         <script type="text/javascript" src="app/controllers/homeController.js"></script>
         <script type="text/javascript" src="app/controllers/detailsController.js"></script>
         <script type="text/javascript" src="app/controllers/editController.js"></script>
@@ -35,13 +37,15 @@
         <script type="text/javascript" src="app/directives/toolbarLeft.directive.js"></script>
         <script type="text/javascript" src="app/directives/sidenav.directive.js"></script>
         <script type="text/javascript" src="app/directives/toolbarRight.directive.js"></script>
+
+
    </head>
 
     <body>
         <div class="my-div"></div>
         <div layout="row" layout-align="center">
             <md-whiteframe class="md-whiteframe-24dp my-whiteframe" layout="row">
-                <div flex="22">
+                <div flex="22" >
                     <app-toolbar-left></app-toolbar-left>
                     <div class="my-scroll" id="my-style">
                         <app-sidenav></app-sidenav>

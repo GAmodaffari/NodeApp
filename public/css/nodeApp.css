@@ -9,6 +9,7 @@
 
 
 
+
  }
 .my-link
 {
@@ -49,7 +50,7 @@
  }
  #my-style::-webkit-scrollbar-track-piece
  {
-     background-color: transparent;
+     background-color: snow;
 
  }
 
@@ -76,8 +77,8 @@
  {
      border-top-width: 1px;
      border-right-width: 1px;
-     border-right-style: solid;
-     border-right-color: #fafafa;
+     border-right-color: white;
+     border-right-style: solid ;
      height: 100%;
  }
 
@@ -97,11 +98,8 @@
 {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
- .my-fab-button
- {
-     top: auto;
-     right: 20px;
-     bottom: 20px;
-     left: auto;
-     position: absolute!important;
+
+
+ .md-button.md-fab.md-fab-bottom-fixed {
+     position: fixed;
  }

@@ -4,7 +4,6 @@
 
 app.controller('editController',['$scope','$http','$routeParams','$httpParamSerializerJQLike',function ($scope, $http,$routeParams,$httpParamSerializerJQLike) {
 
-
     $http({
         cache: true,
         method: 'GET',
