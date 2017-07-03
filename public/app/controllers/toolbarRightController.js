@@ -27,7 +27,7 @@ app.controller('toolbarRightController',['$scope','$location','$mdDialog','$mdUt
             $http({
                 cache: true,
                 method: 'DELETE',
-                url: 'http://localhost:1339/api/users/'+ datiUtenti.pipid
+                url: '/api/users/'+ datiUtenti.pipid
             }).then(function (response) {
                 $scope.nomeUtenti.splice(datiUtenti.pipindex, 1);
             });

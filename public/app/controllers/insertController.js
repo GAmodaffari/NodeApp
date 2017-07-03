@@ -10,7 +10,7 @@ app.controller('insertController', ['$scope', '$http', '$httpParamSerializerJQLi
         console.log('entro qua');
         $http({
             method: 'POST',
-            url: 'http://localhost:1339/api/users',
+            url: '/api/users',
             data: $httpParamSerializerJQLike($scope.insertUsers),
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded' // Note the appropriate header

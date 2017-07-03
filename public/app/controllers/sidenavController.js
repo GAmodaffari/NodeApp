@@ -9,7 +9,7 @@ app.controller('sidenavController',['$scope','$http','$routeParams','datiUtenti'
     $http({
         cache: true,
         method: 'GET',
-        url: 'http://localhost:1339/api/users/'
+        url: '/api/users/'
     }).then(function(res) {
 
         $scope.nomeUtenti = res.data;

@@ -7,7 +7,7 @@ app.controller('editController',['$scope','$http','$routeParams','$httpParamSeri
     $http({
         cache: true,
         method: 'GET',
-        url: 'http://localhost:1339/api/users/' + $routeParams.id
+        url: '/api/users/' + $routeParams.id
     }).then(function (response) {
 
         $scope.editUsers = response.data;
@@ -25,7 +25,7 @@ console.log('cioa');
 
         cache: true,
         method: 'PUT',
-        url: 'http://localhost:1339/api/users/' + $routeParams.id,
+        url: '/api/users/' + $routeParams.id,
        data: $httpParamSerializerJQLike($scope.editUsers),
        headers: {
            'Content-Type': 'application/x-www-form-urlencoded' // Note the appropriate header

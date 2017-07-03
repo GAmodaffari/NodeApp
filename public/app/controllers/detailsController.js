@@ -7,7 +7,7 @@ app.controller('detailsController',['$scope','$http','$routeParams',function ($s
     $http({
 
         method: 'GET',
-        url: 'http://localhost:1339/api/users/' + $routeParams.id
+        url: '/api/users/' + $routeParams.id
     }).then(function(res) {
 
         $scope.dettagli = res.data;
