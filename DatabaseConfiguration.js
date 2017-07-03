@@ -2,20 +2,16 @@
  * Created by Alessandro on 21/03/2017.
  */
 var mysql = require('mysql');
+var config = require('./configs/db');
 
-var connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'KNnaKeGIfiGGIuy9',
-    database: 'nodedb'
-});
+var connection = mysql.createConnection(config);
 
  connection.connect(function(err){
 
     if(!err) {
         console.log("Database is connected ... ");
     } else {
-        console.log("Error connecting database ... ");
+        console.log("Error connecting database ... ", err);
     }
 
 });

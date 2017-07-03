@@ -13,3 +13,4 @@ dist/
 # ignore thumbnails created by windows
 Thumbs.db
 
+configs/

@@ -80,6 +80,7 @@ app.post('/api/users',function (request, response) {
     var Password = request.body.Password;
 
     var query = format("INSERT INTO utente VALUES('',{Nome},{Cognome},{email},{NomeUtente},{Password})",{
+
         Nome: dbConfig.escape(Nome),
         Cognome: dbConfig.escape(Cognome),
         email: dbConfig.escape(email),
@@ -120,7 +121,7 @@ app.put('/api/users/:id',function (request, response) {
     var id = request.param('id');
     var Nome = request.body.Nome;
     var Cognome = request.body.Cognome;
-    var email = request.body.email
+    var email = request.body.email;
     var Password = request.body.Password;
     var NomeUtente = request.body.NomeUtente;
 
